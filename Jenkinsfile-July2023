@@ -1,5 +1,5 @@
 node{
-  def mavenHome = tool name: 'maven
+  def mavenHome = tool name: 'maven'
   stage('1Clone'){
     git 'https://github.com/ericosei1/maven-web-application'
   }
