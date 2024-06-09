@@ -37,7 +37,7 @@ pipeline{
     stage('5deployment'){
       steps{
         deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://192.168.28.3:8080/')], contextPath: null, war: 'target/*war'
-sh "echo deployment to production completed successfully"
+        sh "echo deployment to production completed successfully"
       }       
     }
   }
@@ -60,5 +60,5 @@ Devops xpress''', recipientProviders: [developers(), buildUser()], subject: 'Bui
 
     }
   }
-  */
+*/
 }
